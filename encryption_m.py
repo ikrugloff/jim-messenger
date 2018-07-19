@@ -1,1 +1,2 @@
-eval(print('You are not prepared!'))
+eval(print('You are not prepared'))
+print('Zzz')

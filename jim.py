@@ -1,6 +1,8 @@
 import json
 import time
 
+from encryption import CryptAes
+
 MESSAGE_SIZE = 1024
 DELIMITER = '\n\r'
 DATE_FORMAT = ' %I:%M%p'
@@ -12,7 +14,8 @@ class Message:
         self.__raw['time'] = time.strftime(DATE_FORMAT)
 
     def __bytes__(self):
-        return '{}{}'.format(json.dumps(self.__raw), DELIMITER).encode()
+        aes_encrypt = CryptAes()
+        return (aes_encrypt.encrypt('{}{}'.format(json.dumps(self.__raw), DELIMITER))).encode()
 
     def __str__(self):
         return str(self.__raw)
@@ -93,7 +96,9 @@ def receive(sock, logger):
         return []
 
     try:
-        raw_string = raw_bytes.decode()
+        raw_string_crypt = raw_bytes.decode()
+        aes_decrypt = CryptAes()
+        raw_string = aes_decrypt.decrypt(raw_string_crypt)
     except UnicodeDecodeError as e:
         msg = 'Got not unicode message {}'.format(e)
         logger.info(msg)

@@ -15,7 +15,8 @@ class Message:
 
     def __bytes__(self):
         aes_encrypt = CryptAes()
-        return (aes_encrypt.encrypt('{}{}'.format(json.dumps(self.__raw), DELIMITER))).encode()
+        data2crypt = '{}{}'.format(json.dumps(self.__raw), DELIMITER)
+        return (aes_encrypt.encrypt(data2crypt)).encode()
 
     def __str__(self):
         return str(self.__raw)

@@ -1,12 +1,19 @@
+import os
 from setuptools import setup
+
+with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
+	README = readme.read()
+
+# Allow setup.py to be run from any path
+os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name="dagobah-messenger",
     version='0.1',
     description='JIM socket messenger',
-    long_description='JSON instant messenger with presence control and AES encryption',
+    long_description=README,
     url='https://github.com/ikrugloff/jim-messenger',
-    license='MIT',
+    license='GNU General Public License v3.0',
     keywords=['python', 'messenger', 'json', 'jim', 'geekbrains'],
     author='Ilia Kruglov',
     packages=['jim-messenger', 'jim-messenger/ui'],

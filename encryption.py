@@ -1,17 +1,27 @@
 from Crypto.Cipher import AES
+from Crypto.Util.Padding import pad
+from Crypto.Util.Padding import unpad
+import base64
 
-KEY = b'86bd8a144720b6b0650cbde99a0db485'  # 16-ти байтный ключ.
+BLOCK_SIZE = 32
+KEY = b'86bd8a144720b6b0650cbde99a0db485'
+VECTOR = b'0000000011111111'
+
 
 class CryptAes:
     """
     Класс для шифрования сообщений по алгоритму AES.
     """
     def encrypt(self, message):
-        obj = AES.new('KEY', AES.MODE_CBC, '666')
-        ciphertext = obj.encrypt(message)
-        return ciphertext
+        message = message.encode()
+        raw = pad(message, BLOCK_SIZE)
+        cipher = AES.new(KEY, AES.MODE_CBC, VECTOR)
+        enc = cipher.encrypt(raw)
+        return base64.b64encode(enc).decode('utf-8')
 
     def decrypt(self, raw_string_crypt):
-        obj2 = AES.new('KEY', AES.MODE_CBC, '666')
-        raw_string = obj2.decrypt(raw_string_crypt)
-        return raw_string
+        raw_string_crypt = base64.b64decode(raw_string_crypt)
+        cipher = AES.new(KEY, AES.MODE_CBC, VECTOR)
+        dec = cipher.decrypt(raw_string_crypt)
+        return unpad(dec, BLOCK_SIZE).decode('utf-8')
+

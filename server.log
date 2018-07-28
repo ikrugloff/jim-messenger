@@ -1,0 +1,14 @@
+2018-07-28 23:42:02,966 - INFO - Received [{'action': 'presence', 'user': {'account_name': 'Anonymous_912', 'status': "Yep, I'am here!"}, 'time': ' 11:42PM'}]
+2018-07-28 23:42:02,982 - INFO - Send {'response': 200, 'time': ' 11:42PM'}.
+2018-07-28 23:42:27,427 - INFO - Received [{'action': 'presence', 'user': {'account_name': 'Anonymous_932', 'status': "Yep, I'am here!"}, 'time': ' 11:42PM'}]
+2018-07-28 23:42:27,435 - INFO - Send {'response': 200, 'time': ' 11:42PM'}.
+2018-07-28 23:43:04,901 - INFO - Received [{'action': 'add_contact', 'user_name': 'Anonymous_912', 'time': ' 11:43PM'}]
+2018-07-28 23:43:04,908 - INFO - Send {'response': 200, 'time': ' 11:43PM'}.
+2018-07-28 23:43:16,929 - INFO - Received [{'action': 'add_contact', 'user_name': 'Anonymous_932', 'time': ' 11:43PM'}]
+2018-07-28 23:43:16,942 - INFO - Send {'response': 200, 'time': ' 11:43PM'}.
+2018-07-28 23:43:33,571 - INFO - Received [{'action': 'msg', 'text': 'Privet from 912', 'time': ' 11:43PM'}]
+2018-07-28 23:43:33,576 - INFO - Send {'action': 'msg', 'text': 'Privet from 912', 'to': 'Anonymous_932', '_from': 'Anonymous_912', 'time': ' 11:43PM'}.
+2018-07-28 23:43:33,577 - INFO - Send {'response': 200, 'time': ' 11:43PM'}.
+2018-07-28 23:43:49,004 - INFO - Received [{'action': 'msg', 'text': 'Privet from 932', 'time': ' 11:43PM'}]
+2018-07-28 23:43:49,008 - INFO - Send {'action': 'msg', 'text': 'Privet from 932', 'to': 'Anonymous_912', '_from': 'Anonymous_932', 'time': ' 11:43PM'}.
+2018-07-28 23:43:49,009 - INFO - Send {'response': 200, 'time': ' 11:43PM'}.

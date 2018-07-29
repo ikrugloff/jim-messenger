@@ -1,0 +1,8 @@
+README.md
+setup.py
+dagobah_messenger.egg-info/PKG-INFO
+dagobah_messenger.egg-info/SOURCES.txt
+dagobah_messenger.egg-info/dependency_links.txt
+dagobah_messenger.egg-info/entry_points.txt
+dagobah_messenger.egg-info/requires.txt
+dagobah_messenger.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+[console_scripts]
+dagobah-cli = clnt_cli.main:main
+dagobah-srv = server.main:main
+
+[gui_scripts]
+dagobah-gui = clnt_gui.main:main
+

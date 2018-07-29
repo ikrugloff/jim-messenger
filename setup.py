@@ -25,4 +25,13 @@ setup(
         'pycryptodome==3.6.4',
         'pycryptodomex==3.6.4'
     ],
+    entry_points={
+    	'console_scripts': [
+    		'dagobah-srv = server.main:main',
+    		'dagobah-cli = clnt_cli.main:main'
+    	],
+    	'gui_scripts': [
+    		'dagobah-gui = clnt_gui.main:main'
+    	]
+    },
 )

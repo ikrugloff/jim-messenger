@@ -16,7 +16,7 @@ setup(
     license='GNU General Public License v3.0',
     keywords=['python', 'messenger', 'json', 'jim', 'geekbrains'],
     author='Ilia Kruglov',
-    packages=['jim-messenger', 'jim-messenger/ui'],
+    packages=['jim-messenger', 'jim-messenger/doc', 'jim-messenger/ui'],
     include_package_data=True,
     python_requires='>=3.6.5',
     install_requires=[

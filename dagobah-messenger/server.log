@@ -1,0 +1,10 @@
+2018-07-31 18:39:29,547 - INFO - Received [{'action': 'presence', 'user': {'account_name': 'Anonymous_892', 'status': "Yep, I'am here!"}, 'time': ' 06:39'}]
+2018-07-31 18:39:29,620 - INFO - Send {'response': 200, 'time': ' 06:39'}.
+2018-07-31 18:42:38,861 - INFO - Received [{'action': 'presence', 'user': {'account_name': 'Anonymous_778', 'status': "Yep, I'am here!"}, 'time': ' 06:42'}]
+2018-07-31 18:42:38,933 - INFO - Send {'response': 200, 'time': ' 06:42'}.
+2018-07-31 18:42:39,134 - INFO - Received [{'action': 'get_contacts', 'time': ' 06:42'}]
+2018-07-31 18:42:39,137 - INFO - Send {'response': 202, 'quantity': 0, 'time': ' 06:42'}.
+2018-07-31 18:49:27,233 - INFO - Received [{'action': 'presence', 'user': {'account_name': 'Anonymous_316', 'status': "Yep, I'am here!"}, 'time': ' 06:49'}]
+2018-07-31 18:49:27,312 - INFO - Send {'response': 200, 'time': ' 06:49'}.
+2018-07-31 18:49:39,162 - INFO - Received [{'action': 'presence', 'user': {'account_name': 'Anonymous_852', 'status': "Yep, I'am here!"}, 'time': ' 06:49'}]
+2018-07-31 18:49:39,235 - INFO - Send {'response': 200, 'time': ' 06:49'}.

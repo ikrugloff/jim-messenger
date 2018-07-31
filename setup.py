@@ -31,4 +31,13 @@ setup(
         'pycryptodome==3.6.4',
         'pycryptodomex==3.6.4'
     ],
+    entry_points={
+    	'console_scripts': [
+    		'dagobah-messenger-srv = dagobah-messenger.server:main',
+    		'dagobah-messenger-clnt-cli = dagobah-messenger.clnt_cli:main'
+    	],
+    	'gui_scripts': [
+    		'dagobah-messenger-clnt-gui = dagobah-messenger.clnt_gui:main'
+    	]
+    }
 )

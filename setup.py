@@ -16,28 +16,21 @@ setup(
     license='GNU General Public License v3.0',
     keywords=['python', 'messenger', 'json', 'jim', 'geekbrains'],
     author='Ilia Kruglov',
+	# adding packages
     packages=[
         'dagobah-messenger',
         'dagobah-messenger/ui',
     ],
+	# trying to add files...
+    include_package_data = True,
     package_data={'': ['client.ui'],
-    '': ['doc.tgz']
+    	'': ['doc.tgz']
     },
-    include_package_data=True,
     python_requires='>=3.6.5',
     install_requires=[
         'PyQt5==5.11.2', 
         'SQLAlchemy==1.2.10',
         'pycryptodome==3.6.4',
         'pycryptodomex==3.6.4'
-    ],
-    entry_points={
-    	'console_scripts': [
-    		'dagobah-messenger-srv = dagobah-messenger.server:main',
-    		'dagobah-messenger-clnt-cli = dagobah-messenger.clnt_cli:main'
-    	],
-    	'gui_scripts': [
-    		'dagobah-messenger-clnt-gui = dagobah-messenger.clnt_gui:main'
-    	]
-    }
+    ]
 )

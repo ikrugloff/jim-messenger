@@ -1,2 +1,2 @@
-include doc.tgz
-include client.ui
+include dagobah-messenger/doc.tgz
+include dagobah-messenger/ui/client.ui

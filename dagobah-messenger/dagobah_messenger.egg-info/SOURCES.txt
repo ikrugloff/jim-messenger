@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+dagobah-messenger/doc.tgz
+dagobah-messenger/dagobah_messenger.egg-info/PKG-INFO
+dagobah-messenger/dagobah_messenger.egg-info/SOURCES.txt
+dagobah-messenger/dagobah_messenger.egg-info/dependency_links.txt
+dagobah-messenger/dagobah_messenger.egg-info/requires.txt
+dagobah-messenger/dagobah_messenger.egg-info/top_level.txt
+dagobah-messenger/ui/__init__.py
+dagobah-messenger/ui/client.ui

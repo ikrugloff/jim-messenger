@@ -1,6 +1,6 @@
 Metadata-Version: 1.2
 Name: dagobah-messenger
-Version: 0.1
+Version: 0.3
 Summary: JIM socket messenger
 Home-page: https://github.com/ikrugloff/jim-messenger
 Author: Ilia Kruglov
@@ -10,7 +10,7 @@ Description: ### dagobah-messenger ###
         
         ### Install ###
         
-            pip3 install dagobah-messenger
+            pip install dagobah-messenger
             
         ### How to start ###
         

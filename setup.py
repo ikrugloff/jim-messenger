@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='dagobah-messenger',
-    version='0.1',
+    version='0.3',
     description='JIM socket messenger',
     long_description=README,
     url='https://github.com/ikrugloff/jim-messenger',

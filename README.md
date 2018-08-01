@@ -3,7 +3,7 @@ JSON instant messenger with presence control and AES encryption.
 
 ### Install ###
 
-    pip install dagobah-messenger==0.1
+    pip install dagobah-messenger
     
 ### How to start ###
 

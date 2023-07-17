@@ -21,7 +21,7 @@ setup(
     install_requires=[
         'PyQt5==5.11.2', 
         'SQLAlchemy==1.2.10',
-        'pycryptodome==3.6.4',
+        'pycryptodome==3.6.6',
         'pycryptodomex==3.6.4'
     ],
     entry_points={
